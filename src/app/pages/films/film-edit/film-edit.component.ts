@@ -25,7 +25,6 @@ export class FilmEditComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id') ?? '';
-    console.log('id', id)
     this.listItem = this.listService.getItemById(id) ?? {};
     this.itemForm.patchValue(this.listItem);
   }
