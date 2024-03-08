@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ButtonConfig } from './shared/models/button-config';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'list-project';
+  buttons: ButtonConfig[] = [
+    {
+      label: 'film',
+      path: 'films'
+    },
+    {
+      label: 'prodotti',
+      path: 'products'
+    }
+  ]
 }
