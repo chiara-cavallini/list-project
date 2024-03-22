@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http'
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FilmListComponent } from './pages/films/film-list/film-list.component';
 import { FilmEditComponent } from './pages/films/film-edit/film-edit.component';
@@ -14,6 +13,7 @@ import { FilmItemComponent } from './pages/films/film-list/film-item/film-item.c
 
 import { ProductsComponent } from './pages/products/products.component';
 import { ProductEditComponent } from './pages/products/product-edit/product-edit.component';
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
@@ -24,7 +24,6 @@ import { ProductEditComponent } from './pages/products/product-edit/product-edit
     FilmItemComponent,
     ProductsComponent,
     ProductEditComponent,
-    NavbarComponent,
     ProductEditComponent
   ],
   imports: [
@@ -34,6 +33,7 @@ import { ProductEditComponent } from './pages/products/product-edit/product-edit
     HttpClientModule,
     BrowserAnimationsModule,
     RouterOutlet,
+    SharedModule
 
   ],
   providers: [],
